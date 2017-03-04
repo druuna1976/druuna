@@ -1,0 +1,50 @@
+<footer class="ch-g1 wrapper bottom clearfix">
+	<div class="ch-container">
+<address class="component addressExtended link">
+    <dl class="companyData">
+        <dt>Nuestros datos</dt> 
+		<dd>Dexvida Deportes</dd>
+		#if($showContactFooter)
+				        <dd>Scalabrini Ortiz 2410, Palermo, Buenos Aires</dd>
+				        	        <dd>4832 0191</dd> 
+	                #end
+		<dd>
+			<a href="/contact">Contáctanos</a>
+		</dd>
+    </dl>
+    
+    <dl class="socialData">
+		<dt>
+			Seguinos:
+		</dt>	
+		<dd id="fb-button">
+
+		</dd>
+		<g:plusone size="medium" count="false" href="http://www.dexvidadeportes.com"></g:plusone>
+	</dl>  
+
+			<dl class="fiscalData">
+									
+		</dl> 
+	</address>
+<div class="dataFiscal">
+			
+	<div class="fiscal-data-container">
+		<dl class="fiscalData">
+									
+		</dl>
+	</div>
+	</div>
+
+#if($hasEbitStamp)
+	<div class="dataEbit">
+	<a id="seloEbit" href="http://www.ebit.com.br/#$ebitStoreName" target="_blank" onclick="redir(this.href);">Avaliação de Lojas e-bit</a>
+	<script type="text/javascript" id="getSelo" src="https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?$ebitId" defer="defer">
+	</script> 
+	<div style="clear:both;"></div>
+</div>
+<div style="clear:both;"></div>#end
+ <!-- footer left -->
+	</div>
+		<div class="component mshops">Powered by <a class="link" href="http://www.mercadoshops.com.ar" title="MercadoShops">MercadoShops</a></div>
+	</footer>

@@ -1,0 +1,136 @@
+<header class="wrapper top">
+	<div class="ch-g1 header-top">
+		<div class="ch-container">
+#if( $hasLogo )
+	<figure class="component img-logo">
+		<a href="/" title="Inicio">
+			<img src="/images/logo.jpg?" alt="Dexvida Deportes" title="Dexvida Deportes" /></a>
+	</figure>
+#else
+	<div class="component txt-logo">
+		<a href="/" title="Inicio" class="logo">Dexvida Deportes</a>
+	</div>
+#end
+			<div id="searchWrap" class="searchWrapper clearfix">
+<div class="component searchBar">
+	<form id="searchForm" method="get" action="/jm/com.mercadoshops.web.frontend.page.PageController">
+		<input type="hidden" name="view" value="result">
+		<input id="search" type="search" name="q" value="" class="inputField">
+		<input type="submit" value="Buscar" class="ch-btn ch-secondary button">
+	</form> 
+</div>#if( $shopHasCart )
+	<div id="cart" class="component cartButton">
+		<span id="mini-cart-container" class="bg-cart">
+		<a href="/cart" title="Ver Carrito" rel="nofollow" class="ch-btn ch-secondary button">Ver Carrito</a>
+		</span>
+	</div>
+#end
+			</div>
+		</div>
+	</div>
+	
+        <meta name="msvalidate.01" content="2D0C2D49381BF72093F8E664CFF3C49A"/>
+		<link rel="shortcut icon" href="//static.mercadoshops.com/static/images/favicon.ico"/>
+		<!-- for mobile 2012-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- end mobile -->
+		<!-- env prod -->
+	<div class="ch-g1 clearfix background border navWrapper">
+		<div class="ch-g1-5">
+			<div class="ch-container clearfix">
+#if( $hasOnlyOneCategory )
+	<a href="$uniqueCategory.url" class="no-categ link ch-btn ch-secondary button">Todos los productos</a>
+#else
+	<div id="categDrop" class="component categoriesList ch-dropdown">
+		<p class="button">Categorías</p>
+		<ul style="display:none;">
+						<li>
+				<a href="/aerobics-fitness_qO12835172XtOcxSM">Aerobics y Fitness</a>
+			</li>
+						<li>
+				<a href="/artes-marciales-boxeo_qO12836310XtOcxSM">Artes Marciales y Boxeo</a>
+			</li>
+						<li>
+				<a href="/basquet_qO12835176XtOcxSM">B&aacute;squet</a>
+			</li>
+						<li>
+				<a href="/bicicletas-ciclismo_qO12835187XtOcxSM">Bicicletas y Ciclismo</a>
+			</li>
+						<li>
+				<a href="/futbol_qO3XtOcxSM">F&uacute;tbol</a>
+			</li>
+						<li>
+				<a href="/handball_qO12835213XtOcxSM">Handball</a>
+			</li>
+						<li>
+				<a href="/hockey_qO12836326XtOcxSM">Hockey</a>
+			</li>
+						<li>
+				<a href="/joyas-relojes_qO25085748XtOcxSM">Joyas y Relojes</a>
+			</li>
+						<li>
+				<a href="/juegos-de-salon_qO12835184XtOcxSM">Juegos de Sal&oacute;n</a>
+			</li>
+						<li>
+				<a href="/montanismo-trekking_qO12835193XtOcxSM">Monta&ntilde;ismo y Trekking</a>
+			</li>
+						<li>
+				<a href="/natacion_qO12835180XtOcxSM">Nataci&oacute;n</a>
+			</li>
+						<li>
+				<a href="/natacion-trajes-de-bano_qO12836323XtOcxSM">Natacion - Trajes de Ba&ntilde;o</a>
+			</li>
+						<li>
+				<a href="/natacion-ojotas_qO4XtOcxSM">Natacion - Ojotas</a>
+			</li>
+						<li>
+				<a href="/patin-gimnasia-danza_qO12835178XtOcxSM">Pat&iacute;n, Gimnasia y Danza</a>
+			</li>
+						<li>
+				<a href="/rugby_qO12XtOcxSM">Rugby</a>
+			</li>
+						<li>
+				<a href="/salud-belleza_qO13157087XtOcxSM">Salud y Belleza</a>
+			</li>
+						<li>
+				<a href="/tenis-padel-squash_qO15XtOcxSM">Tenis, Padel y Squash </a>
+			</li>
+						<li>
+				<a href="/voley_qO12835182XtOcxSM">Voley</a>
+			</li>
+						<li>
+				<a href="/zapatillas_qO2XtOcxSM">ZAPATILLAS</a>
+			</li>
+						<li>
+				<a href="/celulares-telefonos_qO25085751XtOcxSM">Celulares y Tel&eacute;fonos</a>
+			</li>
+						<li>
+				<a href="/otros_qO1XtOcxSM">Otros</a>
+			</li>
+					</ul>
+	</div>
+#end
+
+			</div>
+		</div>
+		<div class="ch-g4-5">
+			<div class="ch-container clearfix">
+<ul class="component simpleMenu clearfix">
+	#foreach( $menuItem in $menuItemList )
+		#if( $menuItem.isFirstItem )
+		<li class="first background">
+			<a href="$menuItem.target" title="" class="link" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
+		</li>
+		#else
+		<li class="background">
+			<a href="$menuItem.target" #if($menuItem.noFollow) rel="nofollow" #end title="" class="link" target="$menuItem.linkTarget" data-name="$menuItem.name" data-isFirstItem="$menuItem.isFirstItem" data-target="$menuItem.target" data-noFollow="$menuItem.noFollow" data-linkTarget="$menuItem.linkTarget">$menuItem.name</a>
+		</li>
+		#end
+	#end
+</ul>
+
+			</div>
+		</div>
+	</div>
+</header>

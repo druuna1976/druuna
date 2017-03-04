@@ -1,0 +1,24 @@
+﻿/* Escribe aquí las clases que quieras personalizar. Consulta la documentación en http://blog.mercadoshops.com/html/#EditandoCSS */
+
+h1 {
+    background-color: rgb(236, 242, 248);
+}
+
+div {
+    background-color: rgb(198, 217, 236);
+}
+
+p {
+    background-color: rgb(62, 115, 168);
+}
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 14px;
+}
